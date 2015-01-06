@@ -268,11 +268,9 @@ if ( $ag_data_time > $dataexpira ) { ?>
 
             <h2 class="titulo-capa">Vídeos</h2>
 
-            <?php $recent = get_page_by_path('videos', OBJECT, 'page'); ?>
+            <?php $recent = get_page_by_path ('videos', OBJECT, 'page'); ?>
 
-       <?php echo apply_filters('the_content', $recent->post_content;); ?>
-
-<?php endwhile; ?>
+       <?php echo apply_filters('the_content', $recent->post_content); ?>
 
             <br />
 

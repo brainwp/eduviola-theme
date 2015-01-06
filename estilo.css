@@ -430,6 +430,14 @@ div.menu,*/
 
 }
 
+#content-right iframe{
+
+	max-width: 500px;
+
+}
+
+
+
 #facebook {
 
 	float:left;
