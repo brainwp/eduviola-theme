@@ -1,0 +1,1039 @@
+/*
+
+Tudo que for modificado em style.css deve ser trazido para esse arquivo.
+
+E o que for criado deve permanecer apenas nesse arquivo.
+
+*/
+
+
+
+body {
+
+	background:url(images/bg.jpg) center top fixed #0d0c07;	
+
+}
+
+
+
+#folha {
+
+	width: 960px;
+
+	background:url(images/bg-papel.jpg) center top;
+
+	margin: 0 auto;
+
+	z-index:-99999;
+
+	box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+
+	-moz-box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+
+	-webkit-box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+
+}
+
+
+
+#patrocinio {
+
+	width: 960px;
+
+	margin: 10px auto 0;
+
+	height:110px;	
+
+	background:url(images/patrocinio.png) left top no-repeat;
+
+}
+
+
+
+/* =Fonts
+
+-------------------------------------------------------------- */
+
+body,
+
+input,
+
+textarea,
+
+.page-title span,
+
+.pingback a.url {
+
+	font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
+
+}
+
+h3#comments-title,
+
+h3#reply-title,
+
+#access .menu,
+
+#access div.menu ul,
+
+#cancel-comment-reply-link,
+
+.form-allowed-tags,
+
+#site-info,
+
+#site-title,
+
+#wp-calendar,
+
+.comment-meta,
+
+.comment-body tr th,
+
+.comment-body thead th,
+
+.entry-content label,
+
+.entry-content tr th,
+
+.entry-content thead th,
+
+.entry-meta,
+
+.entry-title,
+
+.entry-utility,
+
+#content-full,
+
+#respond label,
+
+.navigation,
+
+.page-title,
+
+.pingback p,
+
+.reply,
+
+.widget-title,
+
+.wp-caption-text,
+
+input[type=submit] {
+
+	font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
+
+}
+
+pre {
+
+	font-family: "Courier 10 Pitch", Courier, monospace;
+
+}
+
+code {
+
+	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+
+}
+
+
+
+/* -------------- HEADER ------------------- */
+
+
+
+#header {
+
+	height: 400px;
+
+}
+
+
+
+#foto-header {
+
+	background: #000 url(images/foto-header.jpg) center no-repeat;
+
+	width:100%;
+
+	height: 280px;
+
+	position:absolute;
+
+	margin: 165px 0 0 0;
+
+}
+
+#titulo-eduviola {
+
+	background: url(images/titulo-eduviola.png) center no-repeat;
+
+    height: 130px;
+
+    margin: 270px 0 0 470px;
+
+    position: absolute;
+
+    width: 475px;
+
+}
+
+.a-titulo-eduviola {
+
+	width: 475px;
+
+	height: 130px;
+
+	position:absolute;
+
+
+
+}
+
+
+
+/* =Menu
+
+-------------------------------------------------------------- */
+
+
+
+#access {
+
+	display: block;
+
+    float: right;
+
+    margin: 12px auto 0;
+
+    min-width: 560px;
+
+	font-family: 'Open Sans Condensed', sans-serif;
+
+}
+
+#access .menu-header,
+
+div.menu {
+
+	font-size: 13px;
+
+	margin-left: 12px;
+
+	/*width: 928px;*/
+
+}
+
+#access .menu-header ul,
+
+div.menu ul {
+
+	list-style: none;
+
+	margin: 0;
+
+}
+
+#access .menu-header li,
+
+div.menu li {
+
+	float: left;
+
+	position: relative;
+
+}
+
+#access a {
+	color: black;
+	display: block;
+    font-family: 'Open Sans Condensed',sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 38px;
+    padding: 0 15px;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+
+
+#access a:visited {
+	color:black;
+}
+#access ul ul {
+
+	display: none;
+
+	position: absolute;
+
+	top: 38px;
+
+	left: 0;
+
+	float: left;
+
+	width: 180px;
+
+	z-index: 99999;
+
+}
+
+#access ul ul li {
+
+	min-width: 180px;
+
+}
+
+#access ul ul ul {
+
+	left: 100%;
+
+	top: 0;
+
+}
+
+#access ul ul a {
+
+	background: #333;
+
+	line-height: 1em;
+
+	padding: 10px;
+
+	width: 160px;
+
+	height: auto;
+
+}
+
+#access li:hover > a,
+
+#access ul ul :hover > a {
+
+	-webkit-border-radius: 12px;
+
+	-moz-border-radius: 12px;
+
+	border-radius: 12px;
+
+	background: #352b11;
+
+	color: #edb652;
+
+}
+
+#access ul li:hover > ul {
+
+	display: block;
+
+}
+
+#access ul li.current_page_item > a,
+
+#access ul li.current-menu-ancestor > a,
+
+#access ul li.current-menu-item > a,
+
+#access ul li.current-menu-parent > a {
+
+	color: #5c4e2c;
+
+}
+
+* html #access ul li.current_page_item a,
+
+* html #access ul li.current-menu-ancestor a,
+
+* html #access ul li.current-menu-item a,
+
+* html #access ul li.current-menu-parent a,
+
+* html #access ul li a:hover {
+
+	color: #5c4e2c;
+
+}
+
+
+
+
+
+/* -------------- MAIN ------------------- */
+
+#main {
+
+    clear: both;
+
+    overflow: hidden;
+
+    padding: 10px 0 0;
+
+}
+
+
+
+/* -------------- CONTENT ------------------- */
+
+/*#access .menu-header,
+
+div.menu,*/
+
+#colophon,
+
+#branding,
+
+#main,
+
+#wrapper {
+
+	margin: 0 auto;
+
+	width: 960px;
+
+}
+
+
+
+#content-full {
+
+	width: 900px;
+
+	margin: 0 30px;
+
+	color: #000;
+
+}
+
+#content-left {
+
+	width: 350px;
+
+	margin: 0 20px 0 30px;
+
+	color: #000;
+
+	float:left;
+
+}
+
+#content-right {
+
+	width: 500px;
+
+	margin: 0 0 0 30px;
+
+	color: #000;
+
+	float:left;
+
+}
+
+#facebook {
+
+	float:left;
+
+	width: 250px;	
+
+}
+
+#right-1a-linha {
+
+	width: 520px;
+
+	min-height: 300px;
+
+	margin: 35px 0 55px;
+
+	float: left;
+
+}
+
+#fb-like {
+
+	color: #000;
+
+	float: right;
+
+}
+
+#agenda {
+
+	background: url(images/bg-agenda.png) no-repeat;
+
+	width:270px;
+
+	float:left;
+
+	background-position:0 65px;}
+
+body,
+
+input,
+
+textarea {
+
+	color: #000;
+
+	font-size: 13px;
+
+	line-height: 18px;
+
+}
+
+#content-full h1,
+
+#content-full h2,
+
+#content-full h3,
+
+#content-full h4,
+
+#content-full h5,
+
+#content-full h6 {
+
+	color: #000;
+
+	line-height: 1.5em;
+
+	margin: 0 0 20px 0;
+
+	font-family: 'Condiment', cursive;
+
+}
+
+#content-full h2 {
+
+	font-size: 3em;
+
+	text-shadow:-1px -2px #aaa;
+
+}
+
+#content-right h2, #content-left h2, .titulo-capa {
+
+	font-family: 'Open Sans Condensed', sans-serif;
+
+	line-height: 1.5em;
+
+	color: #000;
+
+	text-transform: uppercase;
+
+	font-size: 2em;
+
+	margin: 20px 0 10px 0;
+
+}
+
+.titulo-face {
+
+	font-family: 'Open Sans Condensed', sans-serif;
+
+	line-height: 1em;
+
+	color: #000;
+
+	text-transform: uppercase;
+
+	font-size: 2em;
+
+	margin-top: 27px;
+
+}
+
+#evento-agenda {
+
+    line-height: 0.8em;
+
+	margin-top: 35px;
+
+}
+
+
+
+#data-loop-archive {
+
+    line-height: 1.5em;
+
+	font-family: 'Open Sans Condensed', sans-serif;
+
+	font-size: 1.3em;
+
+	margin-left: 25px;
+
+
+
+}
+
+#titulo-evento-loop-archive {
+
+    line-height: 1.5em;
+
+	padding-left: 10px;
+
+	font-weight: bold;
+
+	font-family: 'Open Sans Condensed', sans-serif;
+
+	font-size: 1.5em;
+
+	margin-top: 20px;
+
+}
+
+
+
+#infos-agenda {
+
+    line-height: 1.5em;
+
+	font-family: 'Open Sans Condensed', sans-serif;
+
+	font-size: 1.3em;
+
+	margin-left: 25px;
+
+}
+
+.linha-blog {
+
+	height: 0px;
+
+}
+
+#contact-form-7 {
+
+	color: #000;	
+
+}
+
+#bandcamp {
+
+    border: 1px solid black;
+
+    height: 535px;
+
+    margin-bottom: 30px;
+
+    padding: 30px 0 0 20px;
+
+	}
+
+	
+
+#bandcamp a {
+
+	color: #000;	
+
+}
+
+
+
+/* =Images
+
+-------------------------------------------------------------- */
+
+
+
+#content img, #content-full img {
+
+	margin: 0;
+
+	height: auto;
+
+	max-width: 640px;
+
+	width: auto;
+
+}
+
+#content .attachment img, #content-full .attachment img {
+
+	max-width: 900px;
+
+}
+
+#content .alignleft,
+
+#content img.alignleft,
+
+#content-full .alignleft,
+
+#content-full img.alignleft{
+
+	display: inline;
+
+	float: left;
+
+	margin-right: 24px;
+
+	margin-top: 4px;
+
+}
+
+#content .alignright,
+
+#content img.alignright,
+
+#content-full .alignright,
+
+#content-full img.alignright{
+
+	display: inline;
+
+	float: right;
+
+	margin-left: 24px;
+
+	margin-top: 4px;
+
+}
+
+#content .aligncenter,
+
+#content img.aligncenter,
+
+#content-full .aligncenter,
+
+#content-full img.aligncenter {
+
+	clear: both;
+
+	display: block;
+
+	margin-left: auto;
+
+	margin-right: auto;
+
+}
+
+#content img.alignleft,
+
+#content img.alignright,
+
+#content img.aligncenter,
+
+#content-full img.alignleft,
+
+#content-full img.alignright,
+
+#content-full img.aligncenter{
+
+	margin-bottom: 12px;
+
+}
+
+#content .wp-caption,
+
+#content-full .wp-caption {
+
+	background: #f1f1f1;
+
+	line-height: 18px;
+
+	margin-bottom: 20px;
+
+	padding: 4px;
+
+	text-align: center;
+
+}
+
+#content .wp-caption img,
+
+#content-full .wp-caption img {
+
+	margin: 5px 5px 0;
+
+}
+
+#content .wp-caption p.wp-caption-text,
+
+#content-full .wp-caption p.wp-caption-text{
+
+	color: #888;
+
+	font-size: 12px;
+
+	margin: 5px;
+
+}
+
+#content .wp-smiley,
+
+#content-full .wp-smiley{
+
+	margin: 0;
+
+}
+
+#content .gallery,
+
+#content-full .gallery{
+
+	margin: 0 auto 18px;
+
+}
+
+#content .gallery .gallery-item,
+
+#content-full .gallery .gallery-item {
+
+	float: left;
+
+	margin-top: 0;
+
+	text-align: center;
+
+	width: 33%;
+
+}
+
+#content .gallery img,
+
+#content-full .gallery img{
+
+	border: 2px solid #cfcfcf;
+
+}
+
+#content .gallery .gallery-caption,
+
+#content-full .gallery .gallery-caption{
+
+	color: #888;
+
+	font-size: 12px;
+
+	margin: 0 0 12px;
+
+}
+
+#content .gallery dl,
+
+#content-full .gallery dl{
+
+	margin: 0;
+
+}
+
+#content .gallery img,
+
+#content-full .gallery img{
+
+	border: 10px solid #f1f1f1;
+
+}
+
+#content .gallery br+br,
+
+#content-full .gallery br+br{
+
+	display: none;
+
+}
+
+#content .attachment img,
+
+#content-full .attachment img { /* single attachment images should be centered */
+
+	display: block;
+
+	margin: 0 auto;
+
+}
+
+
+
+/* FOOTER
+
+-------------------------------------------------------------- */
+
+#footer {
+
+	color:#fff;
+
+	width: 960px;
+
+	margin: 0 auto;
+
+	font-size: 10px;
+
+	font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
+
+	font-style:italic;
+
+}
+
+.a-foo {
+
+	width: 27px;
+
+	height: 27px;
+
+	position: absolute;
+
+}
+
+#foo-producao {
+
+	float: left;
+
+	background: url(images/zastras.png) right no-repeat;
+
+	width: 135px;
+
+	margin: 20px 30px 10px 0;
+
+}
+
+.a-prod {
+
+	width: 95px;
+
+	height: 25px;
+
+	position: absolute;
+
+}
+
+#foo-design {
+
+	float: left;
+
+	background: url(images/mtn.png) right no-repeat;
+
+	width: 70px;
+
+	margin:20px 15px;
+
+}
+
+.a-design {
+
+	width: 55px;
+
+	height: 25px;
+
+	position: absolute;
+
+}
+
+#foo-tecnologia {
+
+	float: left;
+
+	background: url(images/ete.png) right no-repeat;
+
+	width: 85px;
+
+	margin:20px 15px;
+
+}
+
+.a-tec {
+
+	width: 35px;
+
+	height: 25px;
+
+	position: absolute;
+
+}
+
+#foo-desenvolvedor {
+
+	float: left;
+
+	margin:20px 130px 10px 100px;
+
+}
+
+#foo-facebook:hover, #foo-twitter:hover, #foo-youtube:hover, #foo-rss:hover, #foo-email:hover  {
+
+	background-position: top;
+
+}
+
+
+
+#foo-facebook {
+
+	background: url(images/facebook.png) center bottom no-repeat;
+
+	width: 27px;
+
+	height: 27px;
+
+	float: left;
+
+	margin: 20px 7px;
+
+}
+
+
+
+#foo-twitter {
+
+	background: url(images/twitter.png) center bottom no-repeat;
+
+	width: 27px;
+
+	height: 27px;
+
+	float: left;
+
+	margin: 20px 7px;
+
+}
+
+
+
+#foo-youtube {
+
+	background: url(images/youtube.png) center bottom no-repeat;
+
+	width: 27px;
+
+	height: 27px;
+
+	float: left;
+
+	margin: 20px 7px;
+
+}
+
+
+
+#foo-rss {
+
+	background: url(images/rss.png) center bottom no-repeat;
+
+	width: 27px;
+
+	height: 27px;
+
+	float: left;
+
+	margin: 20px 7px;
+
+}
+
+
+
+#foo-email {
+
+	background: url(images/email.png) center bottom no-repeat;
+
+	width: 27px;
+
+	height: 27px;
+
+	float: left;
+
+	margin: 20px 7px;
+
+}
