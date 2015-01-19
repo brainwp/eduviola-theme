@@ -1,10 +1,9 @@
 	</div><!-- #main -->
     
-    	</div><!-- #folha Obs.: Esta DIV � aberta no header-bio.php-->
+    	</div><!-- #folha Obs.: Esta DIV � aberta no header-home.php-->
 
 	<div id="footer" role="contentinfo">
     
-    	<!--<div id="foo-producao"><span>produ&ccedil;&atilde;o:</span><a class="a-prod" href="http://www.zastras.net/"></a></div>-->
         <div id="foo-design"><span>design:</span><a class="a-design" href="http://www.mbnestudio.com/"></a></div>
         <div id="foo-tecnologia"><span>tecnologia:</span><a class="a-tec" href="http://www.etedesign.com.br/"></a></div>
         <div id="foo-desenvolvedor">Todos os direitos reservados &copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?></div>
