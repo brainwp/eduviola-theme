@@ -33,7 +33,7 @@ $args = array(
 'has_archive' => true,
 'hierarchical' => false,
 'menu_position' => null, 
-'supports' => array('title','editor','thumbnail')
+'supports' => array('title','editor')
 );
 
 register_post_type( 'agenda' , $args );
